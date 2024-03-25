@@ -1,0 +1,17 @@
+application:
+  security:
+    jwt:
+      secret-key: DEMO20243322GA228E4318753578762E433G3344342E4E4334355312344E33GA
+      expiration: 2592000000 # a month
+      refresh-token:
+        expiration: 2592000000 # a month
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demodb
+    username: demoadmin
+    password: demoadmin
+  jpa:
+    properties:
+      format_sql: true
+      show_sql: true

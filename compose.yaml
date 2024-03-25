@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:13.6-alpine
+    environment:
+      - TZ=UTC
+      - PGTZ=UTC
+      - POSTGRES_DB=demodb
+      - POSTGRES_USER=demoadmin
+      - POSTGRES_PASSWORD=demoadmin
+    ports:
+      - "5432:5432"
